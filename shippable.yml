@@ -1,12 +1,12 @@
 language: ruby
 
 rvm:
-  - 2.2.8
-  - 2.3.6
-  - 2.4.3
-  - 2.5.0
-  - jruby 1.7.27
-  - jruby 9.1.15
+  #- 2.2.8
+  #- 2.3.6
+  #- 2.4.3
+  #- 2.5.0
+  - jruby-18mode
+  - jruby-19mode
 
 build:
   pre_ci:
