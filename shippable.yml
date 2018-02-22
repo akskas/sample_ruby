@@ -1,0 +1,24 @@
+language: ruby
+
+ruby:
+  - 2.2.8
+  - 2.3.6
+  - 2.4.3
+  - 2.5.0
+  - jruby 1.7.27
+  - jruby 9.1.15
+
+build:
+  pre_ci:
+    - echo 'true'
+  pre_ci_boot:
+    image_name: drydock/u14ruball
+    image_tag: master
+    pull: true
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+    
+  ci:
+    - printenv
+    - java -version    
+    - nvm ls
+    - ruby -e "puts 'Hello, world!'"
