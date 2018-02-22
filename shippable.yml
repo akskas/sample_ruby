@@ -5,8 +5,8 @@ rvm:
   #- 2.3.6
   #- 2.4.3
   #- 2.5.0
-  - jruby-18mode
-  - jruby-19mode
+  - jruby-9.1.15
+  - jruby-1.7.27
 
 build:
   pre_ci:
