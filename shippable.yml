@@ -1,7 +1,7 @@
 language: ruby
 
 rvm:
-  - 2.2.8
+  - 2.2.9
   - 2.3.6
   - 2.4.3
   - 2.5.0
@@ -12,7 +12,7 @@ build:
   pre_ci:
     - echo 'true'
   pre_ci_boot:
-    image_name: drydock/u14ruball
+    image_name: drydock/u16ruball
     image_tag: master
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -24,7 +24,7 @@ build:
     - ruby -e "puts 'Hello, world!'"
     
 jobs:
-  - name: ruby_u14ruball_test
+  - name: ruby_u16ruball_test
     type: runSh
     allowPublicAccess: true
     steps:
@@ -32,7 +32,7 @@ jobs:
           name: version_jruby-9.1.15
           runtime:
             options:
-              imageName: "drydock/u14ruball"
+              imageName: "drydock/u16ruball"
               imageTag: "master"
           script:
             - source /usr/local/rvm/scripts/rvm
@@ -42,27 +42,27 @@ jobs:
           name: version_jruby-1.7.27
           runtime:
             options:
-              imageName: "drydock/u14ruball"
+              imageName: "drydock/u16ruball"
               imageTag: "master"
           script:
             - source /usr/local/rvm/scripts/rvm
             - rvm use jruby-1.7.27
             - ruby -e "puts 'Hello, world!'"   
       - TASK:
-          name: version_2.2.8
+          name: version_2.2.9
           runtime:
             options:
-              imageName: "drydock/u14ruball"
+              imageName: "drydock/u16ruball"
               imageTag: "master"
           script:
             - source /usr/local/rvm/scripts/rvm
-            - rvm use 2.2.8
+            - rvm use 2.2.9
             - ruby -e "puts 'Hello, world!'"     
       - TASK:
           name: version_2.3.6
           runtime:
             options:
-              imageName: "drydock/u14ruball"
+              imageName: "drydock/u16ruball"
               imageTag: "master"
           script:
             - source /usr/local/rvm/scripts/rvm
@@ -72,7 +72,7 @@ jobs:
           name: version_2.4.3
           runtime:
             options:
-              imageName: "drydock/u14ruball"
+              imageName: "drydock/u16ruball"
               imageTag: "master"
           script:
             - source /usr/local/rvm/scripts/rvm
@@ -82,7 +82,7 @@ jobs:
           name: version_2.5.0
           runtime:
             options:
-              imageName: "drydock/u14ruball"
+              imageName: "drydock/u16ruball"
               imageTag: "master"
           script:
             - source /usr/local/rvm/scripts/rvm
