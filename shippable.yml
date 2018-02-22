@@ -35,6 +35,7 @@ jobs:
               imageName: "drydock/u14ruball"
               imageTag: "master"
           script:
+            - source /usr/local/rvm/scripts/rvm
             - rvm use jruby-9.1.15
             - ruby -e "puts 'Hello, world!'"
       - TASK:
@@ -44,6 +45,7 @@ jobs:
               imageName: "drydock/u14ruball"
               imageTag: "master"
           script:
+            - source /usr/local/rvm/scripts/rvm
             - rvm use jruby-1.7.27
             - ruby -e "puts 'Hello, world!'"   
       - TASK:
@@ -53,6 +55,7 @@ jobs:
               imageName: "drydock/u14ruball"
               imageTag: "master"
           script:
+            - source /usr/local/rvm/scripts/rvm
             - rvm use 2.2.8
             - ruby -e "puts 'Hello, world!'"     
       - TASK:
@@ -62,6 +65,7 @@ jobs:
               imageName: "drydock/u14ruball"
               imageTag: "master"
           script:
+            - source /usr/local/rvm/scripts/rvm
             - rvm use 2.3.6
             - ruby -e "puts 'Hello, world!'"     
       - TASK:
@@ -71,6 +75,7 @@ jobs:
               imageName: "drydock/u14ruball"
               imageTag: "master"
           script:
+            - source /usr/local/rvm/scripts/rvm
             - rvm use 2.4.3
             - ruby -e "puts 'Hello, world!'"     
       - TASK:
@@ -80,5 +85,6 @@ jobs:
               imageName: "drydock/u14ruball"
               imageTag: "master"
           script:
+            - source /usr/local/rvm/scripts/rvm
             - rvm use 2.5.0
             - ruby -e "puts 'Hello, world!'"                 
