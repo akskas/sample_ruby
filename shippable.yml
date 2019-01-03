@@ -1,5 +1,9 @@
 language: ruby
 
+env:
+  global:
+    - SHIPPABLE_BUNDLER_VERSION=2.0.0
+
 rvm:
   - 2.3.3
    
