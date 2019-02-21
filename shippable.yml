@@ -11,8 +11,8 @@ build:
   ci:
     - ruby -v
     - bundle install
-    #- ruby test/test_alpha.rb
-    - rake test TEST=test/ts_all.rb
+    - ruby test/ts_all.rb
+    #- rake test TEST=test/ts_all.rb
     - sudo apt-get install tree
     - tree
-    - cat test/reports/TEST-AlphaTest.xml
+    #- cat test/reports/TEST-AlphaTest.xml
