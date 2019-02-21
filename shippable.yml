@@ -12,7 +12,7 @@ build:
     - ruby -v
     - bundle install
     #- ruby test/ts_all.rb
-    - rake test TEST=test/ts_all.rb
+    - rake test TEST=test/ts_main.rb
     - sudo apt-get install tree
     - tree
     - cat test/reports/TEST-AlphaTest.xml
