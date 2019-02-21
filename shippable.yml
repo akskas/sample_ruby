@@ -10,7 +10,7 @@ rvm:
 build:
   ci:
     - ruby -v
-    - bundle exec rake install
+    - bundle install
     #- ruby test/test_alpha.rb
     - rake test TEST=test/alpha_test.rb
     - sudo apt-get install tree
