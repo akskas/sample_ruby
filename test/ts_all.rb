@@ -1,2 +1,2 @@
 require 'test/unit/testsuite'
-require 'alpha_test.rb'
+require 'test/alpha_test.rb'
