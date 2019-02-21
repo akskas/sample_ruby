@@ -15,3 +15,4 @@ build:
     - rake test TEST=test/alpha_test.rb
     - sudo apt-get install tree
     - tree
+    - cat test/reports/TEST-AlphaTest.xml
