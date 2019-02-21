@@ -16,3 +16,4 @@ build:
     - sudo apt-get install tree
     - tree
     - cat test/reports/TEST-AlphaTest.xml
+    - cat test/reports/TEST-BetaTest.xml
