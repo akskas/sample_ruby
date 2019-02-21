@@ -11,6 +11,6 @@ build:
   ci:
     - ruby -v
     #- ruby test/test_alpha.rb
-    - rake ci:setup:testunit alpha
+    - rake test TEST=test/alpha_test.rb
     - sudo apt-get install tree
     - tree
