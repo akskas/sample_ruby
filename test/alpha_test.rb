@@ -2,6 +2,7 @@ require 'test/unit'
 
 class AlphaTest < Test::Unit::TestCase
   def test_passing
+    sleep 120
     assert(true)
   end
   
