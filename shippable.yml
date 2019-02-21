@@ -10,3 +10,4 @@ rvm:
 build:
   ci:
     - ruby -v
+    - ruby test/test_alpha.rb
