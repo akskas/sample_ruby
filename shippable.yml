@@ -10,6 +10,7 @@ rvm:
 build:
   ci:
     - ruby -v
-    - ruby test/test_alpha.rb
+    #- ruby test/test_alpha.rb
+    - rake ci:setup:testunit alpha
     - sudo apt-get install tree
     - tree
